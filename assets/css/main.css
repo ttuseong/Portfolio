@@ -1,0 +1,139 @@
+/* 공통 */
+body{
+  background: rgb(31,31,31);
+}
+
+#bodyContainer{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  color: white;
+}
+
+.row{
+  margin: 0;
+}
+
+.row > div{
+  padding: 0;
+}
+
+#mainView{
+    height: 100vh;
+}
+
+#mainContainer{
+  height: 95%;
+  overflow: hidden;
+}
+
+#mainContents{
+  height: 100%;
+}
+
+.contentSize{
+  float: left;
+}
+
+/* hello */
+/* 왼쪽 사이드 */
+#myContainer{
+  height: 100vh;
+}
+
+#info{
+  text-align: center;
+}
+
+#info > img{
+  width: 150px;
+  height: 150px;
+  border: 3px solid white;
+  border-radius: 100%;
+}
+
+#introduce{
+  height: 50%;
+  overflow: scroll;
+}
+
+#sns{
+    margin-top: 20px;
+}
+
+#sns > div{
+  text-align: center;
+}
+
+#sns > div > a > div{
+  color: white;
+  display: inline-block;
+  text-align: center;
+  font-size: 40px;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+
+#sns > div > a > div:hover{
+  background-color: rgba(255,255,255,0.2);
+}
+
+/* 오른쪽 사이드 */
+#listRow{
+  height: 5%;
+  text-align: center;
+}
+
+.listItem{
+  text-align: center;
+  height: 100%;
+}
+
+.listItem:hover{
+  cursor: pointer;
+}
+
+#helloContent{
+  height: 100%;
+}
+
+#mainIntroduce{
+  height: 65%;
+  border-bottom: 3px solid white;
+  box-sizing: border-box;
+}
+
+#mainLeft{
+  height: 100%;
+  overflow: scroll;
+}
+
+#mainRight{
+  height: 100%;
+}
+
+#believe{
+  height: 30%;
+}
+
+#likes{
+  height: 70%;
+}
+
+#subContent{
+  height: 30%;
+}
+
+/* 기술 부분 */
+#skillsContent > div > div{
+  text-align: center;
+}
+#skillsContent img{
+  width: 60%
+}
+
+/* 프로젝트 부분 */
+#projectsContent h2{
+  border-bottom: 1px solid white;
+}
