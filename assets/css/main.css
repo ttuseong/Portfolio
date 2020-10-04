@@ -82,6 +82,7 @@ body{
 /* 오른쪽 사이드 */
 #listRow{
   height: 5%;
+  position: relative;
   text-align: center;
 }
 
@@ -92,6 +93,14 @@ body{
 
 .listItem:hover{
   cursor: pointer;
+}
+
+#bar{
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  background-color: white;
+
 }
 
 #helloContent{
@@ -136,4 +145,9 @@ body{
 /* 프로젝트 부분 */
 #projectsContent h2{
   border-bottom: 1px solid white;
+}
+
+/* 교육 부분 */
+.educateList{
+  overflow: hidden;
 }
