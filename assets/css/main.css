@@ -1,6 +1,11 @@
 /* 공통 */
 body{
   background: rgb(31,31,31);
+  font-family: 'Nanum Pen Script', cursive;
+}
+
+h2{
+  font-size: 50px;
 }
 
 #bodyContainer{
@@ -89,6 +94,7 @@ body{
 .listItem{
   text-align: center;
   height: 100%;
+  font-size: 25px;
 }
 
 .listItem:hover{
@@ -130,8 +136,26 @@ body{
   height: 70%;
 }
 
+#likes {
+  font-size: 30px;
+}
+
+#likes div img{
+  width: 80%;
+}
+
 #subContent{
   height: 30%;
+  margin-right: 10px;
+}
+
+#education div{
+  font-size: 25px;
+}
+
+.personality{
+  font-size: 35px;
+  color:rgb(119,148,176);
 }
 
 /* 기술 부분 */
@@ -145,9 +169,34 @@ body{
 /* 프로젝트 부분 */
 #projectsContent h2{
   border-bottom: 1px solid white;
+  font-size: 30px;
+}
+
+#projectsContent > .row{
+  margin-bottom: 15px;
+}
+
+.linkContainer{
+  position: relative;
+}
+
+#projectsContent p{
+  font-size: 20px;
+}
+
+.icon-globe{
+  color: green;
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translateY(-50%);
+  font-size: 25px;
 }
 
 /* 교육 부분 */
+#educationContent h2{
+  font-size: 30px;
+}
 .educateList{
   overflow: hidden;
 }
