@@ -84,6 +84,7 @@ ul.timeline:before {
 }
 
 #timeline h4{
+  margin-left: 10px;
     font-size: 30px;
 }
 
@@ -104,12 +105,23 @@ ul.timeline > li:before {
     z-index: 400;
 }
 
-ul.timeline > li > a{
-  margin-left: 30px;
-}
-
 ul.timeline > li > p{
   margin-left: 25px;
+}
+
+ul.timeline > li > p:nth-child(1){
+  font-size: 25px;
+  line-height: 20px
+}
+
+.timelineTitle{
+    font-size: 25px;
+    word-break: keep-all;
+}
+
+.timelineContent{
+    font-size: 23px;
+    word-break: keep-all;
 }
 
 /* sns */
