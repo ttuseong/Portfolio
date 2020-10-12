@@ -65,11 +65,13 @@ function smallCheck(){
     isSmall = true;
     $("#helloContent").height("auto");
     $("#mainView").height("100%");
+    $("#myContainer").height("100%");
     console.log(isSmall);
   } else {
     isSmall = false;
     $("#helloContent").height("100%");
     $("#mainView").height("100vh");
+    $("#myContainer").height("100vh");
   }
 }
 
