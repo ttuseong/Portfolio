@@ -61,7 +61,7 @@ function sizing(){
 
 //isSamll의 값을 결정해주는 함수
 function smallCheck(){
-  if($("body").width() <= 767){
+  if($("body").width() <= 990){
     isSmall = true;
     $("#helloContent").height("auto");
     $("#mainView").height("100%");
