@@ -39,6 +39,13 @@ h2{
 
 .contentSize{
   float: left;
+  height: 100%;
+  overflow: scroll;
+  -ms-overflow-style: none;
+}
+
+.contentSize::-webkit-scrollbar{
+  display:none;
 }
 
 /* hello */
@@ -72,8 +79,6 @@ h2{
 #timeline::-webkit-scrollbar{
   display:none;
 }
-
-
 
 ul.timeline {
     list-style-type: none;

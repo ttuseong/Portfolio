@@ -3,7 +3,7 @@ var viewSize;
 //바의 크기, 한칸당 이동할 거리로 사용
 var barSize;
 //현재 위치
-var pos;
+var pos = 0;
 //교육 내용들의 크기
 var eduList=[];
 //사이즈가 767보다 작아서 메인의 높이를 조절할 필요학 있는지 확인하는 변수
@@ -67,19 +67,22 @@ function sizing(){
 function smallCheck(){
   if($("body").width() <= 990){
     isSmall = true;
-    $("#mainContainer").height($(".contentSize").eq(pos).height());
-    $("#helloContent").height("auto");
+
     $("#mainView").height("100%");
     $("#myContainer").height("100%");
     $("#timeline").css("overflow", "auto");
-    console.log(isSmall);
+    $(".contentSize").css("overflow", "auto");
+    $(".contentSize").height("auto");
+    $("#mainContainer").height($(".contentSize").eq(pos).height());
   } else {
     isSmall = false;
-    $("#mainContainer").height("95%");
-    $("#helloContent").height("100%");
+
     $("#mainView").height("100vh");
     $("#myContainer").height("100vh");
     $("#timeline").css("overflow", "scroll");
+    $(".contentSize").css("overflow", "scroll");
+    $(".contentSize").height("100%");
+    $("#mainContainer").height("95%");
   }
 }
 
