@@ -25,6 +25,10 @@ $(window).resize(function(){
   smallCheck();
 });
 
+$(".educateList").resize(function(){
+  console.log("test");
+})
+
 //메뉴클릭
 $(".listItem").on("click", function(){
   pos = $(this).data("no");
@@ -59,19 +63,23 @@ function sizing(){
   $("#bar").css("margin-left", barSize * pos * 1);
 }
 
-//isSamll의 값을 결정해주는 함수
+//반응형으로 사용하기 위해 값을 변경시키니는 구간
 function smallCheck(){
   if($("body").width() <= 990){
     isSmall = true;
+    $("#mainContainer").height($(".contentSize").eq(pos).height());
     $("#helloContent").height("auto");
     $("#mainView").height("100%");
     $("#myContainer").height("100%");
+    $("#timeline").css("overflow", "auto");
     console.log(isSmall);
   } else {
     isSmall = false;
+    $("#mainContainer").height("95%");
     $("#helloContent").height("100%");
     $("#mainView").height("100vh");
     $("#myContainer").height("100vh");
+    $("#timeline").css("overflow", "scroll");
   }
 }
 
@@ -88,16 +96,35 @@ function educateListInit(){
 //교육 내용 슬라이드
 $(".educateBtn").on("click", function(){
   var target = $(this).next();
+  var index = target.data("no");
 
-  if(target.css("height").split('px')[0] == 0){
-    var index = target.data("no");
+  if(target.height() == 0){
+    changeHeight(index, true);
 
     target.animate({
       height : eduList[index]
     });
   } else{
+    changeHeight(index, false);
+
     target.animate({
       height : 0
     });
   }
 });
+
+//교육 내용을 확인할 때 컨텐츠의 높이 값도 커지게 하는 함
+function changeHeight(index, isOpen){
+  var currentHeight = $(".contentSize").eq(pos).height();
+  if(isSmall){
+    if(isOpen){
+      currentHeight += eduList[index];
+    } else{
+      currentHeight -= eduList[index];
+    }
+
+    $("#mainContainer").animate({
+      height : currentHeight
+    });
+  }
+}
