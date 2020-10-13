@@ -56,6 +56,11 @@ h2{
 
 #info{
   text-align: center;
+  height: 30%;
+}
+
+#info h1{
+  margin-top: 0;
 }
 
 #info > img{
@@ -71,7 +76,7 @@ h2{
 
 /* 타임라인 */
 #timeline{
-  height: 50%;
+  height: 60%;
   overflow: scroll;
   -ms-overflow-style: none;
 }
@@ -138,7 +143,7 @@ ul.timeline > li > p:nth-child(1){
 
 /* sns */
 #sns{
-    margin-top: 20px;
+    height: 10%;
 }
 
 #sns > div{
@@ -228,7 +233,7 @@ ul.timeline > li > p:nth-child(1){
 }
 
 #subContent{
-  height: 30%;
+  height: 35%;
   margin-right: 10px;
 }
 
