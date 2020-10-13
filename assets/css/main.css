@@ -196,6 +196,11 @@ ul.timeline > li > p:nth-child(1){
 #mainLeft{
   height: 100%;
   overflow: scroll;
+  -ms-overflow-style: none;
+}
+
+#mainLeft::-webkit-scrollbar{
+  display:none;
 }
 
 #mainRight{
