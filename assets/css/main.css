@@ -56,22 +56,30 @@ h2{
 
 #info{
   text-align: center;
+  display: table;
+  margin: 0 auto;
   height: 30%;
 }
 
-#info h1{
-  margin-top: 0;
+#infoContainer{
+  display: table-cell;
+  vertical-align: middle;
 }
 
-#info > img{
+#infoContainer h1{
+  margin: 0;
+}
+
+#infoContainer > img{
   width: 150px;
   height: 150px;
   border: 3px solid white;
   border-radius: 100%;
 }
 
-#info p {
+#infoContainer p {
   font-size: 25px;
+  margin: 0;
 }
 
 /* 타임라인 */

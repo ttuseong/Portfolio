@@ -65,7 +65,8 @@ function sizing(){
 
 //반응형으로 사용하기 위해 값을 변경시키니는 구간
 function smallCheck(){
-  if($("body").width() <= 990){
+  infoAlignment();
+  if($("body").width() <= 990 || $("body").height<=800){
     isSmall = true;
 
     $("#mainView").height("100%");
@@ -84,6 +85,14 @@ function smallCheck(){
     $(".contentSize").height("100%");
     $("#mainContainer").height("95%");
   }
+}
+
+//info에 있는 내용들 수직 정렬
+function infoAlignment(){
+  $("#name").css("line-height", $("#name").css("height"));
+  $("#imgContainer").css("line-height", $("#imgContainer").css("height"));
+  $("#phoneNumber").css("line-height", $("#phoneNumber").css("height"));
+  $("#email").css("line-height", $("#email").css("height"));
 }
 
 function educateListInit(){
