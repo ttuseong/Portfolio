@@ -70,11 +70,21 @@ h2{
   margin: 0;
 }
 
-#infoContainer > img{
-  width: 150px;
-  height: 150px;
+#infoContainer > div{
+  width: 160px;
+  height: 160px;
   border: 3px solid white;
   border-radius: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+#infoContainer > div > img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
 }
 
 #infoContainer p {
