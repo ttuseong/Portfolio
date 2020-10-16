@@ -216,6 +216,14 @@ ul.timeline > li > p:nth-child(1){
   display:none;
 }
 
+#mainLeft h3{
+  font-size: 30px;
+}
+
+#mainLeft p{
+  font-size: 25px;
+}
+
 #mainRight{
   height: 100%;
 }
