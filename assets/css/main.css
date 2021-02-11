@@ -29,7 +29,7 @@ h2{
 }
 
 #mainContainer{
-  height: 95%;
+  height: calc(100% - 46px);
   overflow: hidden;
 }
 
@@ -183,7 +183,7 @@ ul.timeline > li > p:nth-child(1){
 
 /* 오른쪽 사이드 */
 #listRow{
-  height: 5%;
+  height: 46px;
   position: relative;
   text-align: center;
 }

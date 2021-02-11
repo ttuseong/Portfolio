@@ -83,7 +83,7 @@ function smallCheck(){
     $("#timeline").css("overflow", "scroll");
     $(".contentSize").css("overflow", "scroll");
     $(".contentSize").height("100%");
-    $("#mainContainer").height("95%");
+    $("#mainContainer").height("calc(100% - 46px)");
   }
 }
 
