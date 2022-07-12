@@ -219,7 +219,7 @@ ul.timeline > li > p:nth-child(1){
 }
 
 #mainIntroduce{
-  height: 65%;
+  height: 100%;
   box-sizing: border-box;
 }
 
@@ -227,6 +227,8 @@ ul.timeline > li > p:nth-child(1){
   height: 100%;
   overflow: scroll;
   -ms-overflow-style: none;
+  border-right: 3px solid rgb(255,255,255,0.5);
+  padding-right:10px;
 }
 
 #mainLeft::-webkit-scrollbar{
@@ -243,6 +245,7 @@ ul.timeline > li > p:nth-child(1){
 
 #mainRight{
   height: 100%;
+  padding-left: 10px
 }
 
 #believe p{
@@ -255,11 +258,6 @@ ul.timeline > li > p:nth-child(1){
 
 #likes div img{
   width: 80%;
-}
-
-#subContent{
-  height: 35%;
-  margin-right: 10px;
 }
 
 #education div{
