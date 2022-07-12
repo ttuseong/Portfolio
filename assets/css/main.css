@@ -94,7 +94,7 @@ h2{
 
 /* 타임라인 */
 #timeline{
-  height: 60%;
+  height: 65%;
   overflow: scroll;
   -ms-overflow-style: none;
 }
@@ -161,7 +161,7 @@ ul.timeline > li > p:nth-child(1){
 
 /* sns */
 #sns{
-    height: 10%;
+    height: 5%;
 }
 
 #sns > div{
