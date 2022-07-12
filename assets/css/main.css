@@ -58,7 +58,7 @@ h2{
   text-align: center;
   display: table;
   margin: 0 auto;
-  height: 30%;
+  height: 15%;
 }
 
 #infoContainer{
@@ -70,21 +70,29 @@ h2{
   margin: 0;
 }
 
-#infoContainer > div{
+#infoContainer > .picture{
   width: 160px;
   height: 160px;
   border: 3px solid white;
   border-radius: 100%;
   overflow: hidden;
   position: relative;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-#infoContainer > div > img{
+#infoContainer > .picture > img{
   position: absolute;
   top: 50%;
   left: 50%;
-
   transform: translate(-50%, -50%);
+}
+
+#infoContainer > .address{
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  margin-left: 30px;
 }
 
 #infoContainer p {
@@ -94,7 +102,7 @@ h2{
 
 /* 타임라인 */
 #timeline{
-  height: 65%;
+  height: 80%;
   overflow: scroll;
   -ms-overflow-style: none;
 }
@@ -212,7 +220,6 @@ ul.timeline > li > p:nth-child(1){
 
 #mainIntroduce{
   height: 65%;
-  border-bottom: 3px solid white;
   box-sizing: border-box;
 }
 
@@ -238,16 +245,8 @@ ul.timeline > li > p:nth-child(1){
   height: 100%;
 }
 
-#believe{
-  height: 30%;
-}
-
 #believe p{
   font-size: 32px;
-}
-
-#likes{
-  height: 70%;
 }
 
 #likes {
