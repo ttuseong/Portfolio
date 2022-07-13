@@ -58,7 +58,7 @@ h2{
   text-align: center;
   display: table;
   margin: 0 auto;
-  height: 15%;
+  height: 195px;
 }
 
 #infoContainer{
@@ -102,7 +102,7 @@ h2{
 
 /* 타임라인 */
 #timeline{
-  height: 80%;
+  height: calc(100% - 260px);
   overflow: scroll;
   -ms-overflow-style: none;
 }
@@ -169,7 +169,7 @@ ul.timeline > li > p:nth-child(1){
 
 /* sns */
 #sns{
-    height: 5%;
+    height: 65px;
 }
 
 #sns > div{
@@ -316,21 +316,4 @@ ul.timeline > li > p:nth-child(1){
 
 .projectInfo p{
   margin-left: 15px;
-}
-
-/* 교육 부분 */
-#educationContent h2{
-  font-size: 30px;
-}
-
-#educationContent p, .educateList li{
-  font-size: 25px;
-}
-
-.educateList{
-  overflow: hidden;
-}
-
-.educateBtn:hover{
-  cursor: pointer;
 }
