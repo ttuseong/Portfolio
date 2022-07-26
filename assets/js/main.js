@@ -25,10 +25,6 @@ $(window).resize(function(){
   smallCheck();
 });
 
-$(".educateList").resize(function(){
-  console.log("test");
-})
-
 //메뉴클릭
 $(".listItem").on("click", function(){
   pos = $(this).data("no");

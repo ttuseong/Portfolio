@@ -245,7 +245,9 @@ ul.timeline > li > p:nth-child(1){
 
 #mainRight{
   height: 100%;
-  padding-left: 10px
+  padding-left: 10px;
+  overflow: scroll;
+  -ms-overflow-style: none;
 }
 
 #believe p{
