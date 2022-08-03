@@ -57,6 +57,7 @@ function sizing(){
 
   $("#mainContents").css("margin-left", viewSize * pos * -1);
   $("#bar").css("margin-left", barSize * pos * 1);
+
 }
 
 //반응형으로 사용하기 위해 값을 변경시키니는 구간

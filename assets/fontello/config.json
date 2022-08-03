@@ -19,16 +19,22 @@
       "src": "fontawesome"
     },
     {
-      "uid": "24d1008bf15b6c02a5e7a6af026987dd",
-      "css": "github-text",
-      "code": 62215,
-      "src": "brandico"
+      "uid": "2dd7e3046b63beb19616dce63c5782a6",
+      "css": "blogger",
+      "code": 59392,
+      "src": "zocial"
     },
     {
-      "uid": "1e89103762be72b0720eda0468e62b90",
+      "uid": "i6ej1r6t84xouh0dct7g9zyx3ya9s9eg",
       "css": "globe",
-      "code": 59392,
-      "src": "linecons"
+      "code": 59393,
+      "src": "modernpics"
+    },
+    {
+      "uid": "798f480ad47c7c7fa6c64ece88ea2180",
+      "css": "github-text",
+      "code": 59394,
+      "src": "elusive"
     }
   ]
 }
