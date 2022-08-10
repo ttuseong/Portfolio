@@ -275,6 +275,58 @@ ul.timeline > li > p:nth-child(1){
   color:rgb(119,148,176);
 }
 
+/* 경력 */
+.companyInfo {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#careerContent .tenure {
+  margin-left: 20px;
+  font-size: 25px;
+}
+
+#careerContent .skillstack {
+  margin-left: 20px;
+}
+
+#careerContent .skillstack ul{
+  font-size: 0;
+  list-style: none;
+}
+
+#careerContent .skillstack ul li{
+  display: inline-block;
+  font-size: 18px;
+  margin-right: 12px;
+  border: 1px solid #6c757d;
+  padding: 6px;
+  border-radius: 6px;
+  color: black;
+  background-color: #6c757d;
+  width: 65px;
+  height: 40px;
+  text-align: center;
+}
+
+#careerContent .carrerInfo{
+  display: inline-block;
+  margin-top: 25px;
+}
+
+#careerContent .carrerInfo .carrerItem h3{
+  font-size: 30px;
+}
+
+#careerContent .carrerInfo .carrerItem ul{
+  list-style: none;
+}
+
+#careerContent .carrerInfo .carrerItem li{
+  font-size: 25px;
+  margin-left: 12px;
+}
+
 /* 기술 부분 */
 #skillsContent > div > div{
   text-align: center;
