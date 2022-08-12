@@ -281,6 +281,11 @@ ul.timeline > li > p:nth-child(1){
   vertical-align: top;
 }
 
+.companyInfo .companyInfoSize{
+  width: 500px;
+  margin: 0 auto;
+}
+
 #careerContent .tenure {
   margin-left: 20px;
   font-size: 25px;
